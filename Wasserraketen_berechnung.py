@@ -45,15 +45,11 @@ A = 0.004 ** 2 * math.pi
 pressure_Pa = pressure * 10 ** 5
 
 m0 = mass_water + mass_rocket
-print(m0)
 mf = mass_rocket
-print(mf)
 Vw = mass_water / 10 ** 3
 # Calculate tb, c, ve
 c = calculate_c(pressure_Pa)
-print(c)
 tb = calculate_tb(c, Vw, A)
-print(tb)
 ve = calculate_ve(c, m0, mf, tb)
 h = calculate_h(ve, tb)
 
