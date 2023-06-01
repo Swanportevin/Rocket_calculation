@@ -13,7 +13,7 @@ Schwerkraft = [Masse[0] * 9.81]
 Endkraft = []
 Höhe = [0, 0]
 
-for i in range(0, 27):
+for i in range(0, 13):
     Zeit.append(delta_t * i)
     Masse.append(Masse[i] - 75000)
     Schwerkraft.append(Masse[i + 1] * 9.81)
